@@ -1,0 +1,62 @@
+{
+"users.customer_ID": {
+  "references": "customers.customer_ID",
+  "source": "customers",
+  "label": "customer_name",
+  "placeholder": "Kunde wählen...",
+  "sort": "customer_name ASC",
+  "filter": "customer_ID = {row.customer_ID}",
+  "new_entry_type": "customer"
+}
+,
+
+  "users.helpdesk_ID": {
+    "references": "helpdesks.helpdesk_ID",
+    "source": "helpdesks",
+    "label": "helpdesk_name",
+    "placeholder": "Helpdesk wählen...",
+    "sort": "helpdesk_name ASC",
+    "filter": "customer_ID = {row.customer_ID}",
+    "new_entry_type": "helpdesk"
+  },
+
+  "customers.Kontakt_technisch": {
+    "references": "users.user_ID",
+    "source": "users",
+    "label": "CONCAT(vorname, ' ', nachname, ' <', email, '>')",
+    "placeholder": "Techn. Kontakt wählen...",
+    "sort": "nachname ASC, vorname ASC",
+    "filter": "customer_ID = {row.customer_ID} OR customer_ID = 0",
+    "new_entry_type": "user"
+  },
+
+  "customers.Kontakt_kaufm": {
+    "references": "users.user_ID",
+    "source": "users",
+    "label": "CONCAT(vorname, ' ', nachname, ' <', email, '>')",
+    "placeholder": "Kaufm. Kontakt wählen...",
+    "sort": "nachname ASC, vorname ASC",
+    "filter": "customer_ID = {row.customer_ID} OR customer_ID = 0",
+    "new_entry_type": "user"
+  },
+
+  "helpdesks.customer_ID": {
+    "references": "customers.customer_ID",
+    "source": "customers",
+    "label": "customer_name",
+    "placeholder": "Kunde wählen...",
+    "sort": "customer_name ASC",
+    "new_entry_type": "customer"
+  },
+
+"helpdesks.helpdesk_ansprechpartner_id": {
+  "references": "users.user_ID",
+  "source": "users",
+  "label": "CONCAT(vorname, ' ', nachname, ' <', email, '>')",
+  "placeholder": "Ansprechpartner wählen...",
+  "sort": "nachname ASC, vorname ASC",
+  "filter": "customer_ID = {row.customer_ID} OR customer_ID = 0",
+  "new_entry_type": "user"
+}
+
+}

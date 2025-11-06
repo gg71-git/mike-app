@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Test Dropdown Fokus</title>
+</head>
+<body>
+  <table border="1">
+    <tr>
+      <td contenteditable="true">Textfeld</td>
+      <td>
+        <select>
+          <option value="">Bitte wählen</option>
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+        </select>
+      </td>
+    </tr>
+  </table>
+
+<script>
+  document.querySelectorAll("select").forEach(sel => {
+    sel.addEventListener("focus", (e) => {
+      console.log("Focus auf Select:", sel);
+      setTimeout(() => {
+        const ev = new KeyboardEvent("keydown", {
+          bubbles: true,
+          cancelable: true,
+          key: "ArrowDown",
+          code: "ArrowDown"
+        });
+        sel.dispatchEvent(ev);
+      }, 0);
+    });
+  });
+</script>
+</body>
+</html>

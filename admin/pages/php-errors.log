@@ -1,0 +1,582 @@
+[01-Sep-2025 10:21:38 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/webpages/lima-city/ggruen71/html/admin/pages/import.php on line 49
+[01-Sep-2025 10:21:50 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/webpages/lima-city/ggruen71/html/admin/pages/import.php on line 49
+[01-Sep-2025 10:21:54 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/webpages/lima-city/ggruen71/html/admin/pages/import.php on line 49
+[01-Sep-2025 15:36:24 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/webpages/lima-city/ggruen71/html/admin/pages/import.php on line 49
+[01-Sep-2025 15:36:41 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/webpages/lima-city/ggruen71/html/admin/pages/import.php on line 49
+[01-Sep-2025 15:36:48 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/webpages/lima-city/ggruen71/html/admin/pages/import.php on line 49
+[02-Sep-2025 10:24:20 Europe/Berlin] PHP Warning:  Undefined variable $fields in /home/webpages/lima-city/ggruen71/html/api/get_schema.php on line 121
+[02-Sep-2025 10:24:20 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/webpages/lima-city/ggruen71/html/api/get_schema.php on line 121
+[03-Sep-2025 15:49:40 Europe/Berlin] SQL Override: 
+                SELECT user_ID AS id,
+                       CONCAT(vorname, ' ', nachname, ' (', email, ')') AS label
+                FROM users
+                WHERE kundenID = {KUNDEN_ID}
+                ORDER BY nachname, vorname
+            
+[03-Sep-2025 15:49:40 Europe/Berlin] SQL Override: 
+                SELECT user_ID AS id,
+                       CONCAT(vorname, ' ', nachname, ' (', email, ')') AS label
+                FROM users
+                WHERE kundenID = {KUNDEN_ID}
+                ORDER BY nachname, vorname
+            
+[03-Sep-2025 15:49:40 Europe/Berlin] SQL Override: 
+                SELECT user_ID AS id, CONCAT(vorname, ' ', nachname) AS label
+                FROM users
+                WHERE rolle = 'Kunde_admin'
+                ORDER BY nachname, vorname
+            
+[04-Sep-2025 08:11:28 Europe/Berlin] PHP Warning:  require_once(../db_connect.php): Failed to open stream: No such file or directory in /home/webpages/lima-city/ggruen71/html/api/get_schema.php on line 5
+[04-Sep-2025 08:11:28 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../db_connect.php' (include_path='.') in /home/webpages/lima-city/ggruen71/html/api/get_schema.php:5
+Stack trace:
+#0 /home/webpages/lima-city/ggruen71/html/admin/pages/customers.php(8): require_once()
+#1 {main}
+  thrown in /home/webpages/lima-city/ggruen71/html/api/get_schema.php on line 5
+[04-Sep-2025 08:12:18 Europe/Berlin] PHP Warning:  require_once(../db_connect.php): Failed to open stream: No such file or directory in /home/webpages/lima-city/ggruen71/html/api/get_schema.php on line 5
+[04-Sep-2025 08:12:18 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../db_connect.php' (include_path='.') in /home/webpages/lima-city/ggruen71/html/api/get_schema.php:5
+Stack trace:
+#0 /home/webpages/lima-city/ggruen71/html/admin/pages/customers.php(8): require_once()
+#1 {main}
+  thrown in /home/webpages/lima-city/ggruen71/html/api/get_schema.php on line 5
+[04-Sep-2025 08:13:18 Europe/Berlin] PHP Warning:  require_once(../db_connect.php): Failed to open stream: No such file or directory in /home/webpages/lima-city/ggruen71/html/api/get_schema.php on line 5
+[04-Sep-2025 08:13:18 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../db_connect.php' (include_path='.') in /home/webpages/lima-city/ggruen71/html/api/get_schema.php:5
+Stack trace:
+#0 /home/webpages/lima-city/ggruen71/html/admin/pages/customers.php(8): require_once()
+#1 {main}
+  thrown in /home/webpages/lima-city/ggruen71/html/api/get_schema.php on line 5
+[04-Sep-2025 08:14:15 Europe/Berlin] PHP Warning:  require_once(/../db_connect.php): Failed to open stream: No such file or directory in /home/webpages/lima-city/ggruen71/html/api/get_schema.php on line 5
+[04-Sep-2025 08:14:15 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '/../db_connect.php' (include_path='.') in /home/webpages/lima-city/ggruen71/html/api/get_schema.php:5
+Stack trace:
+#0 /home/webpages/lima-city/ggruen71/html/admin/pages/customers.php(8): require_once()
+#1 {main}
+  thrown in /home/webpages/lima-city/ggruen71/html/api/get_schema.php on line 5
+[04-Sep-2025 08:25:43 Europe/Berlin] PHP Warning:  require_once(../db_connect.php): Failed to open stream: No such file or directory in /home/webpages/lima-city/ggruen71/html/api/get_schema.php on line 5
+[04-Sep-2025 08:25:43 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../db_connect.php' (include_path='.') in /home/webpages/lima-city/ggruen71/html/api/get_schema.php:5
+Stack trace:
+#0 /home/webpages/lima-city/ggruen71/html/admin/pages/users.php(8): require_once()
+#1 {main}
+  thrown in /home/webpages/lima-city/ggruen71/html/api/get_schema.php on line 5
+[05-Sep-2025 13:50:36 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "catch", expecting end of file in /home/webpages/lima-city/ggruen71/html/api/get_schema.php on line 89
+[06-Sep-2025 21:28:56 Europe/Berlin] PHP Warning:  Undefined variable $uniqueCols in /home/webpages/lima-city/ggruen71/html/admin/pages/import.php on line 37
+[06-Sep-2025 21:28:56 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/webpages/lima-city/ggruen71/html/admin/pages/import.php on line 37
+[06-Sep-2025 21:28:56 Europe/Berlin] PHP Warning:  Undefined variable $uniqueCols in /home/webpages/lima-city/ggruen71/html/admin/pages/import.php on line 37
+[06-Sep-2025 21:28:56 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/webpages/lima-city/ggruen71/html/admin/pages/import.php on line 37
+[06-Sep-2025 21:28:56 Europe/Berlin] PHP Warning:  Undefined variable $uniqueCols in /home/webpages/lima-city/ggruen71/html/admin/pages/import.php on line 37
+[06-Sep-2025 21:28:56 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/webpages/lima-city/ggruen71/html/admin/pages/import.php on line 37
+[06-Sep-2025 21:30:26 Europe/Berlin] PHP Warning:  Undefined variable $uniqueCols in /home/webpages/lima-city/ggruen71/html/admin/pages/import.php on line 37
+[06-Sep-2025 21:30:26 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/webpages/lima-city/ggruen71/html/admin/pages/import.php on line 37
+[06-Sep-2025 21:30:26 Europe/Berlin] PHP Warning:  Undefined variable $uniqueCols in /home/webpages/lima-city/ggruen71/html/admin/pages/import.php on line 37
+[06-Sep-2025 21:30:26 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/webpages/lima-city/ggruen71/html/admin/pages/import.php on line 37
+[06-Sep-2025 21:30:26 Europe/Berlin] PHP Warning:  Undefined variable $uniqueCols in /home/webpages/lima-city/ggruen71/html/admin/pages/import.php on line 37
+[06-Sep-2025 21:30:26 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/webpages/lima-city/ggruen71/html/admin/pages/import.php on line 37
+[06-Sep-2025 21:49:43 Europe/Berlin] PHP Fatal error:  Uncaught Error: Undefined constant "console" in /home/webpages/lima-city/ggruen71/html/admin/pages/import.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/webpages/lima-city/ggruen71/html/admin/pages/import.php on line 48
+[06-Sep-2025 22:09:53 Europe/Berlin] PHP Warning:  Undefined variable $uniqueValues in /home/webpages/lima-city/ggruen71/html/admin/pages/import.php on line 141
+[06-Sep-2025 22:10:01 Europe/Berlin] PHP Warning:  Undefined variable $uniqueValues in /home/webpages/lima-city/ggruen71/html/admin/pages/import.php on line 141
+[06-Sep-2025 22:16:19 Europe/Berlin] PHP Warning:  Undefined variable $uniqueValues in /home/webpages/lima-city/ggruen71/html/admin/pages/import.php on line 145
+[06-Sep-2025 22:16:31 Europe/Berlin] PHP Warning:  Undefined variable $uniqueValues in /home/webpages/lima-city/ggruen71/html/admin/pages/import.php on line 145
+[09-Sep-2025 22:17:37 Europe/Berlin] PHP Parse error:  Unclosed '{' on line 53 in /home/webpages/lima-city/ggruen71/html/api/get_schema.php on line 211
+[09-Sep-2025 22:19:13 Europe/Berlin] PHP Parse error:  Unclosed '{' on line 27 in /home/webpages/lima-city/ggruen71/html/api/get_schema.php on line 211
+[09-Sep-2025 22:19:22 Europe/Berlin] PHP Parse error:  Unclosed '{' on line 53 in /home/webpages/lima-city/ggruen71/html/api/get_schema.php on line 211
+[11-Sep-2025 12:35:10 Europe/Berlin] PHP Parse error:  Unclosed '{' on line 82 in /home/webpages/lima-city/ggruen71/html/api/get_schema.php on line 149
+[11-Sep-2025 12:35:32 Europe/Berlin] PHP Parse error:  Unclosed '{' on line 50 in /home/webpages/lima-city/ggruen71/html/api/get_schema.php on line 150
+[11-Sep-2025 12:36:09 Europe/Berlin] PHP Parse error:  Unclosed '{' on line 50 in /home/webpages/lima-city/ggruen71/html/api/get_schema.php on line 157
+[11-Sep-2025 12:36:12 Europe/Berlin] PHP Parse error:  Unclosed '{' on line 50 in /home/webpages/lima-city/ggruen71/html/api/get_schema.php on line 157
+[11-Sep-2025 12:36:44 Europe/Berlin] PHP Parse error:  Unclosed '{' on line 50 in /home/webpages/lima-city/ggruen71/html/api/get_schema.php on line 157
+[11-Sep-2025 12:37:34 Europe/Berlin] PHP Parse error:  Unclosed '{' on line 24 in /home/webpages/lima-city/ggruen71/html/api/get_schema.php on line 151
+[14-Sep-2025 10:32:33 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function getSchema(), 2 passed in /home/webpages/lima-city/ggruen71/html/admin/pages/manage.php on line 51 and exactly 3 expected in /home/webpages/lima-city/ggruen71/html/api/get_schema.php:19
+Stack trace:
+#0 /home/webpages/lima-city/ggruen71/html/admin/pages/manage.php(51): getSchema('users', Object(PDO))
+#1 {main}
+  thrown in /home/webpages/lima-city/ggruen71/html/api/get_schema.php on line 19
+[14-Sep-2025 10:32:38 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function getSchema(), 2 passed in /home/webpages/lima-city/ggruen71/html/admin/pages/manage.php on line 51 and exactly 3 expected in /home/webpages/lima-city/ggruen71/html/api/get_schema.php:19
+Stack trace:
+#0 /home/webpages/lima-city/ggruen71/html/admin/pages/manage.php(51): getSchema('users', Object(PDO))
+#1 {main}
+  thrown in /home/webpages/lima-city/ggruen71/html/api/get_schema.php on line 19
+[17-Sep-2025 12:04:41 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 45
+[17-Sep-2025 12:06:16 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 3
+[17-Sep-2025 12:08:22 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php:142
+Stack trace:
+#0 /home/webpages/lima-city/ggruen71/html/admin/pages/users.php(142): htmlspecialchars(24)
+#1 {main}
+  thrown in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 142
+[17-Sep-2025 12:17:20 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php:144
+Stack trace:
+#0 /home/webpages/lima-city/ggruen71/html/admin/pages/users.php(144): htmlspecialchars(24)
+#1 {main}
+  thrown in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 144
+[17-Sep-2025 12:17:36 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php:144
+Stack trace:
+#0 /home/webpages/lima-city/ggruen71/html/admin/pages/users.php(144): htmlspecialchars(24)
+#1 {main}
+  thrown in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 144
+[17-Sep-2025 12:17:52 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php:144
+Stack trace:
+#0 /home/webpages/lima-city/ggruen71/html/admin/pages/users.php(144): htmlspecialchars(24)
+#1 {main}
+  thrown in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 144
+[17-Sep-2025 12:19:11 Europe/Berlin] PHP Fatal error:  strict_types declaration must be the very first statement in the script in /home/webpages/lima-city/ggruen71/html/admin/includes/permissions.php on line 4
+[17-Sep-2025 12:21:17 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php:144
+Stack trace:
+#0 /home/webpages/lima-city/ggruen71/html/admin/pages/users.php(144): htmlspecialchars(24)
+#1 {main}
+  thrown in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 144
+[17-Sep-2025 12:22:41 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php:144
+Stack trace:
+#0 /home/webpages/lima-city/ggruen71/html/admin/pages/users.php(144): htmlspecialchars(24)
+#1 {main}
+  thrown in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 144
+[17-Sep-2025 12:24:19 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php:144
+Stack trace:
+#0 /home/webpages/lima-city/ggruen71/html/admin/pages/users.php(144): htmlspecialchars(24)
+#1 {main}
+  thrown in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 144
+[17-Sep-2025 12:30:00 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php:144
+Stack trace:
+#0 /home/webpages/lima-city/ggruen71/html/admin/pages/users.php(144): htmlspecialchars(24)
+#1 {main}
+  thrown in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 144
+[17-Sep-2025 12:32:19 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php:145
+Stack trace:
+#0 /home/webpages/lima-city/ggruen71/html/admin/pages/users.php(145): htmlspecialchars(24)
+#1 {main}
+  thrown in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 145
+[17-Sep-2025 12:34:40 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php:149
+Stack trace:
+#0 /home/webpages/lima-city/ggruen71/html/admin/pages/users.php(149): htmlspecialchars(24)
+#1 {main}
+  thrown in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 149
+[17-Sep-2025 14:24:51 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:24:51 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, null given in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php:150
+Stack trace:
+#0 /home/webpages/lima-city/ggruen71/html/admin/pages/users.php(150): htmlspecialchars(NULL)
+#1 {main}
+  thrown in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:28:44 Europe/Berlin] PHP Parse error:  syntax error, unexpected token ";", expecting ")" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 131
+[17-Sep-2025 14:29:20 Europe/Berlin] PHP Parse error:  syntax error, unexpected token ";", expecting ")" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 132
+[17-Sep-2025 14:29:52 Europe/Berlin] PHP Parse error:  syntax error, unexpected token ";", expecting ")" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:30:18 Europe/Berlin] PHP Parse error:  syntax error, unexpected token ";", expecting ")" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:30:46 Europe/Berlin] PHP Parse error:  syntax error, unexpected token ";", expecting ")" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:30:56 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:32:14 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 14:32:25 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 169
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined variable $attr in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 152
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 156
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 165
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined variable $attr in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 152
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 156
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 165
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined variable $attr in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 152
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 156
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 165
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined variable $attr in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 152
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 156
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 165
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined variable $attr in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 152
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 156
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 165
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined variable $attr in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 152
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 156
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 165
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined variable $attr in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 152
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 156
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 165
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined variable $attr in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 152
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 156
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 165
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined variable $attr in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 152
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 156
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 165
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined variable $attr in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 152
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 156
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 165
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined variable $attr in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 152
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 156
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 165
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined variable $attr in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 152
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 156
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 165
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined variable $attr in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 152
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 156
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 165
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined variable $attr in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 152
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 156
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 165
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 150
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined variable $attr in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 152
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 156
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 160
+[17-Sep-2025 15:31:06 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 165
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 158
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 168
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 173
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 158
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 168
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 173
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 158
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 168
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 173
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 158
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 168
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 173
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 158
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 168
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 173
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 158
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 168
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 173
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 158
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 168
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 173
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 158
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 168
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 173
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 158
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 168
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 173
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 158
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 168
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 173
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 158
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 168
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 173
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 158
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 168
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 173
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 158
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 168
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 173
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 158
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 168
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 173
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 158
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 164
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 168
+[17-Sep-2025 15:32:17 Europe/Berlin] PHP Warning:  Undefined array key "user_ID" in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 173
+[17-Sep-2025 17:11:35 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function requirePermission() in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 51
+[17-Sep-2025 17:11:37 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function requirePermission() in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 51
+[17-Sep-2025 17:13:40 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: requirePermission(): Argument #1 ($role) must be of type ?string, PDO given, called in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 51 and defined in /home/webpages/lima-city/ggruen71/html/admin/includes/permissions.php:56
+Stack trace:
+#0 /home/webpages/lima-city/ggruen71/html/admin/pages/users.php(51): requirePermission(Object(PDO), 'users', 'view')
+#1 {main}
+  thrown in /home/webpages/lima-city/ggruen71/html/admin/includes/permissions.php on line 56
+[18-Sep-2025 15:15:29 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/webpages/lima-city/ggruen71/html/admin/pages/import.php on line 71
+[22-Sep-2025 21:15:59 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/webpages/lima-city/ggruen71/html/admin/pages/users.php on line 15
+[23-Sep-2025 10:20:49 Europe/Berlin] PHP Warning:  Undefined variable $standortEnum in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 10:20:49 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 10:26:04 Europe/Berlin] PHP Warning:  Undefined variable $standortEnum in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 10:26:04 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 10:27:47 Europe/Berlin] PHP Warning:  Undefined variable $standortEnum in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 10:27:47 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 10:33:44 Europe/Berlin] PHP Warning:  Undefined variable $standortEnum in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 10:33:44 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 10:34:57 Europe/Berlin] PHP Warning:  Undefined variable $standortEnum in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 10:34:57 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 10:36:36 Europe/Berlin] PHP Warning:  Undefined variable $standortEnum in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 10:36:36 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 10:37:32 Europe/Berlin] PHP Warning:  Undefined variable $standortEnum in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 10:37:32 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 10:42:56 Europe/Berlin] PHP Warning:  Undefined variable $standortEnum in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 10:42:56 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 10:43:17 Europe/Berlin] PHP Warning:  Undefined variable $standortEnum in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 10:43:17 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 10:45:12 Europe/Berlin] PHP Warning:  Undefined variable $standortEnum in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 10:45:12 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 10:49:41 Europe/Berlin] PHP Warning:  Undefined variable $standortEnum in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 10:49:41 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 10:50:04 Europe/Berlin] PHP Warning:  Undefined variable $standortEnum in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 10:50:04 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 10:50:43 Europe/Berlin] PHP Warning:  Undefined variable $standortEnum in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 10:50:43 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 10:52:04 Europe/Berlin] PHP Warning:  Undefined variable $standortEnum in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 10:52:04 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 10:53:13 Europe/Berlin] PHP Warning:  Undefined variable $standortEnum in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 10:53:13 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 10:53:45 Europe/Berlin] PHP Warning:  Undefined variable $standortEnum in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 10:53:45 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 10:54:11 Europe/Berlin] PHP Warning:  Undefined variable $standortEnum in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 10:54:11 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 10:57:38 Europe/Berlin] PHP Warning:  Undefined variable $standortEnum in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 10:57:38 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 10:59:57 Europe/Berlin] PHP Warning:  Undefined variable $standortEnum in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 10:59:57 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 11:01:36 Europe/Berlin] PHP Warning:  Undefined array key 0 in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 23
+[23-Sep-2025 11:01:36 Europe/Berlin] PHP Warning:  Trying to access array offset on null in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 23
+[23-Sep-2025 11:01:36 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 26
+[23-Sep-2025 11:05:52 Europe/Berlin] PHP Warning:  Undefined variable $standortEnum in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 11:05:52 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 11:06:06 Europe/Berlin] PHP Warning:  Undefined variable $standortEnum in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 11:06:06 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 24
+[23-Sep-2025 12:41:38 Europe/Berlin] PHP Warning:  Undefined variable $i in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 56
+[23-Sep-2025 12:41:38 Europe/Berlin] PHP Warning:  Undefined variable $i in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 56
+[23-Sep-2025 12:41:57 Europe/Berlin] PHP Warning:  Undefined variable $i in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 56
+[23-Sep-2025 12:41:57 Europe/Berlin] PHP Warning:  Undefined variable $i in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 56
+[23-Sep-2025 12:43:02 Europe/Berlin] PHP Warning:  Undefined variable $i in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 56
+[23-Sep-2025 12:49:13 Europe/Berlin] PHP Warning:  Undefined variable $i in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 56
+[23-Sep-2025 13:16:46 Europe/Berlin] PHP Warning:  Undefined variable $schema in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 42
+[23-Sep-2025 13:16:46 Europe/Berlin] PHP Warning:  Trying to access array offset on null in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 42
+[23-Sep-2025 13:16:46 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_filter(): Argument #1 ($array) must be of type array, null given in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php:42
+Stack trace:
+#0 /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php(42): array_filter(NULL, Object(Closure))
+#1 {main}
+  thrown in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 42
+[23-Sep-2025 13:19:01 Europe/Berlin] PHP Warning:  Undefined variable $schema in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 42
+[23-Sep-2025 13:19:01 Europe/Berlin] PHP Warning:  Trying to access array offset on null in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 42
+[23-Sep-2025 13:19:01 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_filter(): Argument #1 ($array) must be of type array, null given in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php:42
+Stack trace:
+#0 /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php(42): array_filter(NULL, Object(Closure))
+#1 {main}
+  thrown in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 42
+[23-Sep-2025 13:27:20 Europe/Berlin] PHP Warning:  Undefined variable $schema in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 46
+[23-Sep-2025 13:27:20 Europe/Berlin] PHP Warning:  Trying to access array offset on null in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 46
+[23-Sep-2025 13:27:20 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_filter(): Argument #1 ($array) must be of type array, null given in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php:46
+Stack trace:
+#0 /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php(46): array_filter(NULL, Object(Closure))
+#1 {main}
+  thrown in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 46
+[23-Sep-2025 13:28:04 Europe/Berlin] PHP Warning:  Undefined variable $schema in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 46
+[23-Sep-2025 13:28:04 Europe/Berlin] PHP Warning:  Trying to access array offset on null in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 46
+[23-Sep-2025 13:28:04 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_filter(): Argument #1 ($array) must be of type array, null given in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php:46
+Stack trace:
+#0 /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php(46): array_filter(NULL, Object(Closure))
+#1 {main}
+  thrown in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 46
+[23-Sep-2025 14:30:24 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 2
+[23-Sep-2025 14:30:31 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 2
+[25-Sep-2025 21:06:02 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "catch", expecting end of file in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 131
+[25-Sep-2025 21:06:05 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "catch", expecting end of file in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 131
+[25-Sep-2025 21:07:23 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "catch", expecting end of file in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 131
+[25-Sep-2025 21:07:26 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "catch", expecting end of file in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 131
+[25-Sep-2025 21:08:26 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "catch", expecting end of file in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 131
+[25-Sep-2025 21:26:49 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "if" in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 78
+[25-Sep-2025 21:26:54 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "if" in /home/webpages/lima-city/ggruen71/html/admin/pages/modal_new_entry.php on line 78
+[04-Oct-2025 15:56:30 Europe/Berlin] PHP Warning:  file_get_contents(http://mike-app.4lima.de/api/get_schema.php?table=helpdesks): Failed to open stream: HTTP request failed! in /home/webpages/lima-city/ggruen71/html/admin/pages/helpdesks.php on line 22
+[04-Oct-2025 18:26:21 Europe/Berlin] PHP Warning:  file_get_contents(http://mike-app.4lima.de/api/get_schema.php?table=customers&amp;customer_ID=171): Failed to open stream: HTTP request failed! in /home/webpages/lima-city/ggruen71/html/admin/pages/customers.php on line 22

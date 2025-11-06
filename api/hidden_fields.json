@@ -1,0 +1,7 @@
+{
+  "users": ["user_ID","passwort_hash","avatar_url","login_code","code_created_at","erstellt_am","updated_at","letzter_login","login_status"],
+  "customers": ["updated_at"],
+  "helpdesks": ["updated_at"],
+  "import_users_temp": []
+}
+
