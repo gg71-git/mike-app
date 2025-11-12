@@ -37,45 +37,55 @@ if (!tableName) {
 // -------------------------------------------------------
 // Initialisierung
 // -------------------------------------------------------
-document.addEventListener("DOMContentLoaded", async () => {
+document.addEventListener("DOMContentLoaded", () => {
   try {
-    // 1️⃣ Schema laden
-    const schema = await ladeSchema(tableName);
-    window.currentSchema = schema;
+    // 1️⃣ Schema laden (asynchron, blockiert Event-Loop nicht)
+    ladeSchema(tableName)
+      .then(schema => {
+        if (!schema) {
+          console.error("❌ Kein Schema erhalten!");
+          return;
+        }
 
-    // 2️⃣ Dropdowns initialisieren
-    document.querySelectorAll("tbody tr").forEach(row => applyDropdowns(row, schema));
+        window.currentSchema = schema;
 
-    // 3️⃣ New-Button binden
-    bindGlobalNewButton();
+        // 2️⃣ Dropdowns initialisieren
+        document.querySelectorAll("tbody tr").forEach(row => applyDropdowns(row, schema));
 
-    // 4️⃣ Sortierung & Fokus
-    sortTableByFirstVisibleColumn(schema);
-    wendeFokusAn();
+        // 3️⃣ New-Button binden
+        bindGlobalNewButton();
 
-    // 5️⃣ Ungültige Daten (debug)
-    document.querySelectorAll("tbody tr[data-id]").forEach(row => {
-      const check = validateRow(row, schema);
-      if (!check.ok) console.warn("⚠️ Ungültige Daten:", check);
-    });
+        // 4️⃣ Sortierung & Fokus
+        sortTableByFirstVisibleColumn(schema);
+        wendeFokusAn();
 
-    // 6️⃣ Markierungs-Button (optional)
-    const btn = document.getElementById("clear-markings-btn");
-    if (btn) {
-      btn.addEventListener("click", () => {
-        clearMarkings();
-        console.log("🧹 Markierungen entfernt");
-        location.reload();
+        // 5️⃣ Ungültige Daten (debug)
+        document.querySelectorAll("tbody tr[data-id]").forEach(row => {
+          const check = validateRow(row, schema);
+          if (!check.ok) console.warn("⚠️ Ungültige Daten:", check);
+        });
+
+        // 6️⃣ Markierungs-Button (optional)
+        const btn = document.getElementById("clear-markings-btn");
+        if (btn) {
+          btn.addEventListener("click", () => {
+            clearMarkings();
+            console.log("🧹 Markierungen entfernt");
+            location.reload();
+          });
+
+          const hasMarks = !!document.querySelector(".duplicate-cell, .invalid-cell");
+          btn.style.display = hasMarks ? "inline-block" : "none";
+        }
+
+        console.log("✅ admin.js vollständig initialisiert.");
+      })
+      .catch(err => {
+        console.error("❌ Fehler bei Schema-Ladevorgang:", err);
+        alert("Schema konnte nicht geladen werden. Bitte später erneut versuchen.");
       });
 
-      const hasMarks = !!document.querySelector(".duplicate-cell, .invalid-cell");
-      btn.style.display = hasMarks ? "inline-block" : "none";
-    }
-
-    console.log("✅ admin.js initialisiert.");
-
   } catch (err) {
-    console.error("❌ Fehler bei Initialisierung:", err);
-    alert("Schema konnte nicht geladen werden. Bitte später erneut versuchen.");
+    console.error("❌ Unerwarteter Fehler in admin.js:", err);
   }
 });

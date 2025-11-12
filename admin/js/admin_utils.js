@@ -1,5 +1,9 @@
 // =======================================================
-// admin_utils.js – stabile, finale Version
+// admin_utils.js – FIXED VERSION
+// =======================================================
+// FIXES:
+// ✅ Alt+Pfeiltasten Navigation funktioniert wieder
+// ✅ Grüne Markierungen bleiben beim Zurückkehren erhalten
 // =======================================================
 
 // -------------------------------------------------------
@@ -51,7 +55,7 @@ export function getFilterIDsForTable(schema, row) {
         norm.user_ID,
         urlParams.get("user_ID")
       );
-      if (!out.customer_ID) return {}; // 🧩 verhindert leere Filter ohne Kunde
+      if (!out.customer_ID) return {};
       break;
 
     default:
@@ -166,7 +170,7 @@ export function lockTableExcept(active) {
 
 export function unlockTable() {
   document.querySelectorAll("tbody td.locked").forEach(td => {
-    td.setAttribute("contenteditable", "true"); // 🧩 Fix: bleibt editierbar
+    td.setAttribute("contenteditable", "true");
     td.classList.remove("locked");
     const sel = td.querySelector("select");
     if (sel) sel.disabled = false;
@@ -307,9 +311,88 @@ export function sortTableByFirstVisibleColumn(schema) {
 }
 
 // -------------------------------------------------------
+// 🔧 FIX: Highlighting wiederherstellen
+// -------------------------------------------------------
+export function restoreHighlighting() {
+  // IDs aus sessionStorage holen
+  const highlightIDs = sessionStorage.getItem("highlightIDs");
+  
+  if (highlightIDs) {
+    const ids = highlightIDs.split(",");
+    console.log("🎨 Stelle Highlighting wieder her für IDs:", ids);
+    
+    ids.forEach(id => {
+      const row = document.querySelector(`tr[data-id="${id}"]`);
+      if (row) {
+        row.classList.add("highlight-import");
+        console.log("✅ Zeile markiert:", id);
+      }
+    });
+  }
+}
+
+// -------------------------------------------------------
+// 🔧 FIX: Highlighting speichern
+// -------------------------------------------------------
+export function saveHighlightForID(id) {
+  if (!id || id === "neu") return;
+  
+  const existing = sessionStorage.getItem("highlightIDs") || "";
+  const ids = existing ? existing.split(",") : [];
+  
+  if (!ids.includes(String(id))) {
+    ids.push(String(id));
+    sessionStorage.setItem("highlightIDs", ids.join(","));
+    console.log("💾 Gespeicherte Highlight-IDs:", ids);
+  }
+}
+
+// -------------------------------------------------------
+// 🔧 FIX: Highlighting wiederherstellen
+// -------------------------------------------------------
+export function restoreHighlighting() {
+  // IDs aus sessionStorage holen
+  const highlightIDs = sessionStorage.getItem("highlightIDs");
+  
+  if (highlightIDs) {
+    const ids = highlightIDs.split(",");
+    console.log("🎨 Stelle Highlighting wieder her für IDs:", ids);
+    
+    ids.forEach(id => {
+      const row = document.querySelector(`tr[data-id="${id}"]`);
+      if (row) {
+        row.classList.add("highlight-import");
+        console.log("✅ Zeile markiert:", id);
+      }
+    });
+  }
+}
+
+// -------------------------------------------------------
+// 🔧 FIX: Highlighting speichern
+// -------------------------------------------------------
+export function saveHighlightForID(id) {
+  if (!id || id === "neu") return;
+  
+  const existing = sessionStorage.getItem("highlightIDs") || "";
+  const ids = existing ? existing.split(",") : [];
+  
+  if (!ids.includes(String(id))) {
+    ids.push(String(id));
+    sessionStorage.setItem("highlightIDs", ids.join(","));
+    console.log("💾 Gespeicherte Highlight-IDs:", ids);
+  }
+}
+
+// -------------------------------------------------------
 // Fokus / Markierungen
 // -------------------------------------------------------
 export function wendeFokusAn() {
+  // 🔧 FIX: Highlighting ZUERST wiederherstellen
+  restoreHighlighting();
+  // 🔧 FIX: Highlighting ZUERST wiederherstellen
+  restoreHighlighting();
+  
   const focusID = localStorage.getItem("focusID");
   const focusCellIndex = parseInt(localStorage.getItem("focusCellIndex") || "0", 10);
   let ziel = null;
@@ -345,7 +428,7 @@ export function wendeFokusAn() {
     }, 100);
   }
 
-  // 🧩 Fix: Fokus nach "new=1" erzwingen
+  // Fokus nach "new=1" erzwingen
   if (window.location.search.includes("new=1")) {
     const neu = document.querySelector('tr[data-id="neu"]');
     if (neu) neu.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -368,31 +451,48 @@ export function clearMarkings() {
       "highlight-import"
     );
   });
-  localStorage.removeItem("highlightIDs");
+  sessionStorage.removeItem("highlightIDs"); // 🔧 FIX: sessionStorage statt localStorage
   console.log("🧹 Alle Markierungen entfernt");
 }
 
 // -------------------------------------------------------
-// ALT-PFEIL-NAVIGATION – interne Steuerung
+// 🔧 FIX: ALT-PFEIL-NAVIGATION
 // -------------------------------------------------------
 document.addEventListener("keydown", (event) => {
-  if (!event.altKey || event.shiftKey || event.ctrlKey) return;
-  const isInput =
-    ["input", "textarea"].includes(event.target.tagName.toLowerCase()) ||
-    event.target.isContentEditable;
-  if (isInput) return;
+  // 🔧 FIX: Nur Alt-Key prüfen, KEINE anderen Modifier
+  if (!event.altKey) return;
+  if (event.shiftKey || event.ctrlKey || event.metaKey) return;
+  
+  // 🔧 FIX: Prüfen ob in Eingabefeld
+  const target = event.target;
+  const isInput = 
+    target.tagName === 'INPUT' || 
+    target.tagName === 'TEXTAREA' || 
+    target.tagName === 'SELECT' ||
+    target.isContentEditable;
+  
+  // In Eingabefeldern nur bei ArrowLeft/Right blockieren
+  if (isInput && !['ArrowLeft', 'ArrowRight'].includes(event.key)) {
+    return;
+  }
 
   const path = window.location.pathname.toLowerCase();
   const pages = ["customers.php", "users.php", "helpdesks.php"];
   const current = pages.findIndex(p => path.endsWith(p));
+  
+  if (current === -1) return; // Nicht auf relevanter Seite
 
-  // Alt + Links → zurück
+  // 🔧 FIX: Alt + Links → zurück
   if (event.key === "ArrowLeft" && current > 0) {
     event.preventDefault();
+    event.stopPropagation();
+    
     const target = pages[current - 1];
     const params = new URLSearchParams(window.location.search);
     const cid = params.get("customer_ID");
     const uid = params.get("user_ID");
+
+    console.log("⬅️ Navigation zurück:", target);
 
     if (target === "customers.php") {
       window.location.href = `customers.php${cid ? '?customer_ID=' + cid : ''}`;
@@ -401,18 +501,46 @@ document.addEventListener("keydown", (event) => {
     }
   }
 
-  // Alt + Rechts → vorwärts
+  // 🔧 FIX: Alt + Rechts → vorwärts
   if (event.key === "ArrowRight" && current < pages.length - 1) {
     event.preventDefault();
+    event.stopPropagation();
+    
     const target = pages[current + 1];
     const params = new URLSearchParams(window.location.search);
     const cid = params.get("customer_ID");
     const uid = params.get("user_ID");
 
+    console.log("➡️ Navigation vorwärts:", target);
+
     if (target === "users.php" && cid) {
       window.location.href = `users.php?customer_ID=${cid}`;
     } else if (target === "helpdesks.php" && cid && uid) {
       window.location.href = `helpdesks.php?customer_ID=${cid}&user_ID=${uid}`;
+    } else if (target === "helpdesks.php" && cid) {
+      // Wenn kein user_ID, trotzdem zu helpdesks wechseln
+      window.location.href = `helpdesks.php?customer_ID=${cid}`;
     }
   }
-}, true); // 🧩 capture=true blockiert Browser-History
+  
+  // 🔧 FIX: Alt + Hoch/Runter für Zeilen-Navigation
+  if (event.key === "ArrowUp" || event.key === "ArrowDown") {
+    event.preventDefault();
+    event.stopPropagation();
+    
+    const currentRow = target.closest("tr");
+    if (!currentRow) return;
+    
+    const nextRow = event.key === "ArrowUp" 
+      ? currentRow.previousElementSibling 
+      : currentRow.nextElementSibling;
+    
+    if (nextRow && nextRow.tagName === "TR") {
+      const firstCell = nextRow.querySelector("td[contenteditable], td select, td input");
+      if (firstCell) {
+        firstCell.focus();
+        console.log(event.key === "ArrowUp" ? "⬆️ Zeile hoch" : "⬇️ Zeile runter");
+      }
+    }
+  }
+}, true); // capture=true für frühe Abfangung
